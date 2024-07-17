@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<head>
+    <title>ETHEREAL EVENTS
+    </title>
+    <link rel="icon" href="tibar.png">
+        <style>
+            body{
+                background:url(BIRTH.jpg)no-repeat center fixed;
+                background-size: cover;
+            }
+            table{
+                width:80%;
+                margin: auto;
+                border:1px solid white;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 35px;
+                table-layout: fixed;
+                background: rgba(244, 26, 222, 0.511);
+                opacity:0.9;
+                
+                margin-top: 100px
+            }
+            th,td{
+                padding: 20px;
+                color: rgb(255, 255, 255);
+            }
+            .submit-btn
+{
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: rgb(125, 16, 4);
+	border: 0;
+    color: azure;
+	outline: none;
+	border-radius: 30px;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 2.8rem;
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  border: 0.2rem solid #130f40;
+  cursor: pointer;
+  background: none;
+  color: #f31194;
+  font-size: 1.7rem;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #130f40;
+  z-index: -1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-clip-path: circle(0% at 0% 5%);
+          clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.btn:hover {
+  color: #fff;
+}
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href='HOME.html'><h3>ETHEREAL EVENTS</h3></a>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='HOME.html'><h3>HOME</h3></a></li>
+                <li><a href='WEDPACK.html'>WEDDING</a></li>
+                <li><a href='#'>BIRTHDAY</a></li>
+                <li><a href='ENTPACK.html'>ENTERTAINMENT</a></li>
+                <li><button class='btn' onclick="window.location.href='HOME.html';" style="width:auto;">LOGIN</button></li>
+            </ul>
+        </nav>
+    </div>
+    <table>
+        <tr><th >Hello, User our Packages for your events!! <?php echo $user_data['user_name']; ?></th></tr>
+        <tr>
+            <th style="color: solid silver;">BIRTHDAY PACKAGE<img src="birtd.png" height="50px"></th>
+           
+        </tr>
+        <tr>
+            <TD>Venue Sourcing</TD>
+            
+        </tr>
+        <tr>
+            <TD>Cake & Candies</TD>
+            
+        </tr>
+        <tr>
+            <TD>DJ Musics</TD>
+            
+        </tr>
+        <tr>
+            <TD>Catering</TD>
+            
+        </tr>
+        <tr>
+            <
+            <td>Photograpy and Videography</td>
+        </tr>
+        <tr>
+           
+            <TD>Invitation cards</TD>
+        </tr>
+        <tr>
+            <td>Dedicated Event co-ordinators</td>
+        </tr>
+        <tr>
+            <TD><form action="errreg.html" method="post"><button type='submit'class='btn'>Register</button></form></TD>
+         
+        </tr>
+    </table>
+    
+</body>
+</html>

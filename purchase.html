@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <title>Entertainment
+    </title>
+        <style>
+            body{
+                background:url(live.jpg)no-repeat center fixed;
+                background-size: cover;
+            }
+            table,th,td{
+                width:80%;
+                margin: auto;
+                border:1px solid white;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 35px;
+                table-layout: fixed;
+                background: rgba(117, 240, 226, 0.514);
+                opacity:0.7;
+                color: rgb(41, 12, 123);
+                margin-top: 100px
+            }
+            th,td{
+                padding: 20px;
+                opacity:50;
+            }
+            .submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #860941;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    color: aliceblue
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 2.8rem;
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  border: 0.2rem solid #130f40;
+  cursor: pointer;
+  background: none;
+  color: #f31194;
+  font-size: 1.7rem;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #130f40;
+  z-index: -1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-clip-path: circle(0% at 0% 5%);
+          clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.btn:hover {
+  color: #fff;
+}
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <button class='btn' onclick="window.location.href='Home.php';" style="width:auto;">ETHEREAL EVENTS</button>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='index.php'><h3>HOME</h3></a></li>
+                <li><a href='wed.html'>WEDDING</a></li>
+                <li><a href='birth.html'>BIRTHDAY</a></li>
+                <li><a href='ENT.html'>ENTERTAINMENT</a></li>
+                <li><button class='btn' onclick="window.location.href='logout.php';" style="width:auto;">LOGOUT</button></li>
+            </ul>
+        </nav>
+    </div>
+    <table>
+        <tr><th colspan="2">Hello, User our ENTERTAINMENT EVENT PACKAGE INVOLVES<?php echo $user_data['user_name']; ?></th></tr>
+        <tr>
+            <th style="color: solid silver;">LIVE CONCERT</th>
+            <th style="color:solid gold;">FESTIVE & FEST</th>
+        </tr>
+        <tr>
+            <TD>Name</TD>
+            <TD>$row['user_name']</TD>
+
+        </tr>
+        <tr>
+            <TD>Email</TD>
+            <TD>$row['email']</TD>
+        </tr>
+        <tr>
+            <TD>Phone</TD>
+            <TD>$row['phone']</TD>
+        </tr>
+        <tr>
+            <TD>Date of Register</TD>
+            <TD>$row['date']</TD>
+        </tr>
+        <tr>
+            <TD>Ref ID</TD>
+            <TD>$row['user_id']</TD>
+        <tr>
+            <TD>Date of Event</TD>
+            <TD><input type='date'class='input-field'placeholder='Date' name="Date" required></TD>
+        </tr>
+        <tr>
+            <TD>Address</TD>
+            <TD><input type='text'class='input-field'placeholder='Address' name="Address" required></TD>
+        <tr>
+            <TD>Estimation of Attendies</TD>
+            <TD><input type='text'class='input-field'placeholder='no.of.attendies' name="no.of.attendies" required></TD>
+        </tr>
+        <tr>
+            <TD><form action="reg_sil.php" method="post"><button type='submit'class='btn'>Net Price</button></form></TD>
+            <td><form action="reg_sil.php" method="post"><button type='submit'class='btn'>Register</button></form></td>
+        </tr>
+
+
+
+        <!-- create table event(user_id int() not null,name varchar(30) not null,date_event varchar(12) not null,event_code varchar(10) not null,price int() not null,email varchar(30) not null, phone int() not null,address varchar(70)not null,estd int() not null,primary key(user_id));

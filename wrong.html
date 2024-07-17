@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ETHEREAL EVENTS</title>
+    <link rel="stylesheet" href="style.css">
+    <!---we had linked our css file----->
+    <style>
+        .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 2.8rem;
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  border: 0.2rem solid #130f40;
+  cursor: pointer;
+  background: none;
+  color: #f31194;
+  font-size: 1.7rem;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #130f40;
+  z-index: -1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-clip-path: circle(0% at 0% 5%);
+          clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='website.html'>ETHEREAL EVENTS</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href=''>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><a href="HOME.html">login</a></li>
+                </ul>
+             </nav>
+
+</div>
+<BR>
+    <BR>
+        <BR>
+            <BR>
+                <BR>
+                    <BR>
+<center><h1 style="color:white;">YOU HAVE ENTERED IN CORRECT PASSWORD KINDLY LOGIN AGAIN!!</h1></center><BR>
+    <BR><BR>
+        <BR>
+<center><button class='btn' onclick="window.location.href='HOME.html';" style="width:auto;">LOGIN</button></center>
+</body>
+</html>

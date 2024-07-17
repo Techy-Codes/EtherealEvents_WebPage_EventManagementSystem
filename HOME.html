@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal EVENT</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2180f54384.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <img src="image/logo.png" height="45px" width="100%"> </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#plan">plan</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fa fa-address-card-o" id="redg-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="user.php" class="login-form" method="post">
+        <h3>sign in</h3>
+        <input type="text" name="user_name" placeholder="Enter your Username" id="username" class="box">
+        <input type="password" name="password" placeholder="Enter your password" id="password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" >
+        <div class="links">
+            <a href="#">forget password</a>
+            <a id="redg" href="#register">sign up</a>
+        </div>
+    </form>
+    <form action="signup.php" id='register' class="input-group-register" method="post">
+        <input type='text' class="box" placeholder='Username' name="name" id="username" required>
+        <input type='text' class="box" placeholder='Phone ' name="phone" required>
+        <textarea  class="box" id="address" name="address" rows="2" cols="45" placeholder='Address 'required></textarea>
+        <input type='email' class="box" placeholder='Email Id' name="email" id="email" required>
+        <input type='password' class="box" placeholder='Enter Password' name='password' id="password" required>
+        <input type='password' class="box" placeholder='Confirm Password' id="password2" required>
+        <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+        <input type="submit" value="sign up" class="btn" onclick="valid()">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <p id="stcnt"><h3> <span>hi</span> welcome to Heavenly World!!!</h3></p>
+        <a id="hreg" href="#register" class="btn">Register Now!!</a>
+    </div>
+
+
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="image/about_img.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>ABOUT <span>US</span> </h3>
+        <p>We are a young agency formed by a group of like-minded professionals , with one sole purpose to provide the best solutions to our clients and create a benchmark with our service standards.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/mat.png" height="50px" width="50px"style="background-color:#aa0d9d;">
+            <h3>Matrimony</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/photo.png" height="50px" width="50px">
+            <h3>Photography</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat.png" height="50px" width="50px">
+            <h3>Catering</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/hot.png" height="50px" width="50px"style="background-color:#aa0d9d;">
+            <h3>Venu searching</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/vol.png" height="50px" width="50px"style="background-color:#aa0d9d;color:white">
+            <h3>Organising volunteers</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/wed.png" height="50px" width="50px">
+            <h3>Wedding Decor</h3>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- plan section starts  -->
+
+<section class="plan" id="plan">
+
+    <h1 class="heading"> choose a <span>plan</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">WEDDING</h3>
+            <h3 class="day"> 1 day </h3>
+            <img src="image/wedpack.png" height="50px" width="50px">
+            <div class="list">
+                <p> pet room <span class="fas fa-check"></span> </p>
+                <p> pet grooming <span class="fas fa-check"></span> </p>
+                <p> pet exercise <span class="fas fa-check"></span> </p>
+                <p> pet meals <span class="fas fa-check"></span> </p>
+            </div>
+            <div class="amount"><span>₹</span>50</div>
+            <a href="WEDPACK.html" class="btn"> choose plan </a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">PARTY</h3>
+            <h3 class="day"> 10 days </h3>
+            <img src="image/part.png" height="50px" width="50px">
+            <div class="list">
+                <p> pet room <span class="fas fa-check"></span> </p>
+                <p> pet grooming <span class="fas fa-check"></span> </p>
+                <p> pet exercise <span class="fas fa-check"></span> </p>
+                <p> pet meals <span class="fas fa-check"></span> </p>
+            </div>
+            <div class="amount"><span>₹</span>350</div>
+            <a href="BIRTHDAYPACK.html" class="btn"> choose plan </a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">SOCIAL</h3>
+            <h3 class="day"> 30 days </h3>
+            <img src="image/concert.png" height="50px" width="50px">
+            <div class="list">
+                <p> pet room <span class="fas fa-check"></span> </p>
+                <p> pet grooming <span class="fas fa-check"></span> </p>
+                <p> pet exercise <span class="fas fa-check"></span> </p>
+                <p> pet meals <span class="fas fa-check"></span> </p>
+            </div>
+            <div class="amount"><span>₹</span>650</div>
+            <a href="ENTPACK.html" class="btn"> choose plan </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- plan section ends -->
+
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="image/contact_img.png" alt="">
+    </div>
+
+    <form action="">
+        <h3>contact us</h3>
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="tumber" placeholder="your number" class="box">
+        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<section class="footer">
+
+
+    <div class="share">
+        <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#" class="btn"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
+    </div>
+  
+      
+
+    <div class="credit">copyright ©<span> HEVIN </span> </div>
+
+</section>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

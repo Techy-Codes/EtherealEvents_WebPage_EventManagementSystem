@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ETHEREAL EVENTS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="tibar.png">
+    <style>.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 2.8rem;
+  border-radius: 5rem;
+  border-top-left-radius: 0;
+  border: 0.2rem solid #130f40;
+  cursor: pointer;
+  background: none;
+  color: #f31194;
+  font-size: 1.7rem;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #130f40;
+  z-index: -1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-clip-path: circle(0% at 0% 5%);
+          clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.btn:hover {
+  color: #fff;
+}
+span
+{
+	color:green;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+</style>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='#'>ETHEREAL EVENTS</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                <li><a href='HOME.html'><h3>HOME</h3></a></li>
+                <li><a href='WEDDLO.html'>WEDDING</a></li>
+                <li><a href='BIRTHLO.html'>BIRTHDAY</a></li>
+                <li><a href='ENTELO.html'>ENTERTAINMENT</a></li>
+                <li><button class='btn' onclick="window.location.href='login form.html';" style="width:auto;">LOGIN</button></li>
+                </ul>
+            </nav>
+        </div>
+        
+	
+			<div class="about-text">
+				
+			
+			</div>
+		
+
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Wedding Decor</h5>
+				<div class="pra">
+					<p>A Sucessful mariage requires falling love many times with same person</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+            <i class="fa-duotone fa-film"></i>
+				<h5>Photography & Entertainment</h5>
+				<div class="pra">
+					<p>Every moment is precious in our life.The lovel Unforgatable moments were capture by our ETHEREAL STUDIOS</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+            <i class="fa-duotone fa-film"></i>
+				<h5>Catering & Concierge service</h5>
+				<div class="pra">
+					<p>The most precious thing in this world is the food.The whatever we do in our daily routine at the end of the day we done those things for food.To make your event fullfill Ethereal Catreing service is here </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!------Contact Me------>
+		<div class="contact-me">
+		<p>Let We Get You A Beautiful Memories.</p>
+		<a class="button-two" href="#">Hire Us</a>
+	</div>
+
+	<!------footer start--------->
+	<footer>
+		<p></p>
+		<p></p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">COPYRIGHTS © BY HEVIN</p>
+	</footer>
+    </body>
+</html>
